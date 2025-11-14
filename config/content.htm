@@ -194,3 +194,4 @@
 <p># 取得馬達與感測器<br/>left_motor = robot.getDevice('left wheel motor')<br/>right_motor = robot.getDevice('right wheel motor')<br/>left_motor.setPosition(float('inf')) # velocity control<br/>right_motor.setPosition(float('inf'))</p>
 <p>ds = robot.getDevice('ds0')<br/>ds.enable(TIME_STEP)</p>
 <p>while robot.step(TIME_STEP) != -1:<br/>dist = ds.getValue()<br/>if dist &lt; 800:<br/># 避障（簡單反向轉向）<br/>left_motor.setVelocity(-2.0)<br/>right_motor.setVelocity(2.0)<br/>else:<br/>left_motor.setVelocity(3.0)<br/>right_motor.setVelocity(3.0)</p>
+<h3><strong>w14</strong></h3>
